@@ -88,7 +88,7 @@ function crossEnd(e){
   if(target.className !== "cl-btn-7") return
   console.log(target)
   const liDiv = document.querySelector('.li-div')
-  par = target.parentNode
+  const par = target.parentNode
   console.log(par)
   par.remove()
 }
