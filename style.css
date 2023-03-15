@@ -1,0 +1,94 @@
+body {
+  background-color: #b0cbfa;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+.conteiner h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+input {
+  padding-left: 8px;
+  font-size: 18px;
+  width: 400px;
+  height: 70px;
+}
+
+li {
+  background-color: #fff;
+  height: 40px;
+  list-style-type: none;
+  padding: 4px 0 4px 8px;
+  font-size: 18px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.li-div {
+  background-color: #83faad;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.li-div p {
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.cl-btn-7 {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.cl-btn-7:before {
+  content: "+";
+  color: #337AB7;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  font-size: 50px;
+  line-height: 1;
+  top: -5px;
+  left: 6px;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+
+.cl-btn-7:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #337AB7;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+  transform: scale(0.01);
+}
+
+.cl-btn-7:hover:after {
+  transform: scale(1);
+}
+
+.cl-btn-7:hover:before {
+  transform: scale(0.8) rotate(45deg);
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
